@@ -1,0 +1,17 @@
+<script>
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+
+      form = document.querySelector('form');
+
+      form.setAttribute('action', '{{ env('APP_URL') }}/click.php?id={{ $id }}');
+
+      form.setAttribute('method', 'POST');
+
+
+
+  });
+
+
+</script>
